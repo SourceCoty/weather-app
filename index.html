@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weatherly</title>
+</head>
+<body>
+    <div class="header">
+        <span id="logo">Weatherly</span>
+        <form id="search-container">
+            <input type="text" id="search-bar" placeholder="Search location">
+            <button type="submit" id="search-button">Submit </button>
+        </form>
+    </div>
+    <div class="content">
+        <div class="variables-display">
+            <span id="location">Chiang Mai, Thailand</span>
+            <span id="temp-toggle">C/F</span>
+        </div>
+        <div class="current-weather-block">
+            <span id="current-weather-container">
+                <span id="weather-title">
+                    <h2>Todays Weather</h2>
+                </span>
+                <span id="current-card-container">
+                    <span class="data-card">
+                        <span class="card-title">Temperature</span>
+                        <span class="card-data">33°</span>
+                    </span>
+                    <span class="data-card">
+                        <span class="card-title">Precipitation</span>
+                        <span class="card-data">50%</span>
+                    </span>
+                    <span class="data-card">
+                        <span class="card-title">Humidity</span>
+                        <span class="card-data">76%</span>
+                    </span>
+                    <span class="data-card">
+                        <span class="card-title">Wind Speed</span>
+                        <span class="card-data">5km/h</span>
+                    </span>
+                </span>
+            </span>
+        </div>
+        <div class="forecast">
+            <span id="day-forecast">
+                <h2 id="day-title">3 Day Forecast</h2>
+            </span>
+            <div class="cards-container">
+                <span class="pair" id="card-1">
+                    <span class="day" id="day-1">Monday</span>
+                    <span class="forecast-card">
+                        <span class="icon-container">
+                            <img class="icon" src="cloud_cloudy_sun_sunny_weather_icon.svg" alt="">
+                        </span>
+                        <span class="temp">
+                            <span class="temp-one">
+                                <span>33°</span>
+                            </span>
+                            <span class="temp-two">
+                                <span>23°</span>
+                            </span>
+                        </span>
+                    </span>
+                </span>
+                <span class="pair" id="card-2">
+                    <span class="day" id="day-2">Tuesday</span>
+                    <span class="forecast-card">
+                        <span class="icon-container">
+                            <img class="icon" src="cloud_heavy rain_rain_weather_icon.svg" alt="">
+                        </span>
+                        <span class="temp">
+                            <span class="temp-one">
+                                <span>33°</span>
+                            </span>
+                            <span class="temp-two">
+                                <span>23°</span>
+                            </span>
+                        </span>
+                    </span>
+                </span>
+                <span class="pair" id="card-3">
+                    <span class="day" id="day-3">Wednesday</span>
+                    <span class="forecast-card">
+                        <span class="icon-container">
+                            <img class="icon" src="cloud_sun_sunny_weather_icon.svg" alt="">
+                        </span>
+                        <span class="temp">
+                            <span class="temp-one">
+                                <span>33°</span>
+                            </span>
+                            <span class="temp-two">
+                                <span>23°</span>
+                            </span>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://github.com/SourceCoty">Coty Massmann</a>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
