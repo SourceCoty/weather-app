@@ -11,7 +11,7 @@ getForecast("chiang mai")
 
 async function getForecast(location) {
     try {
-        const response = await fetch("http://api.weatherapi.com/v1/forecast.json?key=08d3021134324946aa4131033230811&q=" + location + "&days=3&aqi=no&alerts=no", {mode: 'cors'})
+        const response = await fetch("https://api.weatherapi.com/v1/forecast.json?key=08d3021134324946aa4131033230811&q=" + location + "&days=3&aqi=no&alerts=no", {mode: 'cors'})
         const forecastData = await response.json()
         
         forecast = await forecastData;
