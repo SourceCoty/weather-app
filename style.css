@@ -17,7 +17,7 @@ body {
 
 a{
     text-decoration: none;
-    color: #374151;
+    color: #000000;
     font-size: 1.15rem;
 }
 
@@ -45,7 +45,6 @@ h2{
     width: 20rem;
     display: flex;
     justify-content: space-around;
-    /* padding-right: 5px; */
 }
 
 #search-bar, #search-bar::placeholder{
@@ -74,6 +73,10 @@ h2{
     border: solid .5px #1222ce;
 }
 
+#search-button:hover{
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.473);
+}
+
 .content {
     background-color: #f3f0f07c;
     color: #878d98;
@@ -81,10 +84,6 @@ h2{
     display: grid;
     grid-template-rows: .3fr 2fr 4fr;
 }
-
-/* .variables-display, .current-weather-block, .forecast{
-    border: 1px dotted #374151;
-} */
 
 .variables-display{
     display: flex;
@@ -96,24 +95,36 @@ h2{
 
 #location, #temp-toggle{
     background-color: #ffffff;
-    border: .1rem solid #e5e7eb;
     padding: .3rem .5rem;
     border-radius: 4px;
 }
+
+#location {
+    border: .1rem solid #e5e7eb;
+}
+
+#temp-toggle{
+    background-color: #ffffff;
+    color: red;
+    border: none;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.215);
+    width: 2.2em;
+}
+
+#temp-toggle:hover{
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.439);
+}
+
 .current-weather-block{
     display:flex;
     justify-content: center;
     align-items: center;
     padding: 0 25px;
-
-    /* border: 2px dotted green; */
-
 }
 
 #current-weather-container{
     border: none;
     background-color: #ffffff;
-    /* border: 2px dotted green; */
     border-radius: 15px;
     box-shadow: 3px 7px 10px #e3e0e0;
     height: 15rem;
@@ -127,7 +138,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#0c189aee;
+    background-color:rgb(247, 24, 24);
     color: #ffffff;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -138,7 +149,6 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 0 5px;
-    /* border: 2px dotted grey; */
 }
 
 .data-card{
@@ -152,7 +162,6 @@ h2{
 }
 
 .card-title{
-    /* font-weight: 600; */
     margin-bottom: .5rem;
     font-size: 1.2rem;
     color: #878d98;
@@ -167,7 +176,6 @@ h2{
     display: grid;
     grid-template-rows: 40px 1fr;
     padding-top: 1.3rem;
-    /* border: 2px dotted grey; */
 }
 
 #day-forecast{
@@ -185,7 +193,6 @@ h2{
 }
 
 .cards-container{
-    /* border: 2px dotted grey; */
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -198,7 +205,6 @@ h2{
     display: grid;
     grid-template-rows: 1fr 7fr;
     padding: 0 10px;
-    /* border: 2px dotted grey; */
     flex-grow: .2;
 }
 
@@ -251,19 +257,23 @@ h2{
     align-items: center;
 }
 
-
-
-
-
-
-
-
 .footer {
     background-color: #ffffff;
     color: #fffdfd;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: .1em solid #e5e7eb;
+    border-top: .1rem solid #e5e7eb;
 }
 
+#github-icon{
+    height: 1.3rem;
+    padding-right: 5px;
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(26deg) brightness(100%) contrast(100%);
+}
+
+#foot-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
